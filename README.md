@@ -21,15 +21,18 @@ rp-win.exe --file narly.dll -r 5 --bad-bytes 00,01 > rop.txt
 3. Put pykd.pyd in C:\Program Files\Windows Kits\10\Debuggers\x86\winext\
 4. Put windbglib.py in C:\Program Files\Windows Kits\10\Debuggers\x86\
 5. Put mona.py in C:\Program Files\Windows Kits\10\Debuggers\x86\
-6. cmd.exe with Administrator Privilege
+6. Open cmd.exe with Administrator Privilege
 ```
 cd "C:\Program Files\Common Files\Microsoft Shared\VC\"
 regsvr32 /s msdia90.dll
 ```
-
+7. Set Folder Permission
+![Alt text](Images/image-5.png)
+8. Start Mona
 ```
 .load pykd.pyd
 !py mona
 !py mona.py rop -m *.dll -cp nonull
+!py mona.py rop -m *.dll -cp -cpb '\x00\x3b'
 ```
 ![Alt text](Images/image-4.png)
