@@ -36,3 +36,10 @@ regsvr32 /s msdia90.dll
 !py mona.py rop -m *.dll -cp -cpb '\x00\x3b'
 ```
 ![Alt text](Images/image-4.png)
+
+## filter-ropfile.py
+```
+python3 filter-ropfile.py rop.txt                                              
+```
+![Alt text](Images/image-6.png)
+![Alt text](Images/image-7.png)
