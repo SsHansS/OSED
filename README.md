@@ -27,6 +27,7 @@ cd "C:\Program Files\Common Files\Microsoft Shared\VC\"
 regsvr32 /s msdia90.dll
 ```
 7. Set Folder Permission
+
 ![Alt text](Images/image-5.png)
 8. Start Mona
 ```
