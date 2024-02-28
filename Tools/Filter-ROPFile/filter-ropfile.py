@@ -32,7 +32,10 @@ def filter_bad_char_gadgets(gadget_list, badchars, aslr):
         start = aslr
 
     for gadget in gadget_list:
-        hex_address = gadget.split(":")[0].split("0x")[1]
+        try:
+            hex_address = gadget.split(":")[0].split("0x")[1]
+        except Exception as e:
+            pass
 
         # generate badchar list
         split_badchars = []
