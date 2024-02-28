@@ -39,6 +39,7 @@ regsvr32 /s msdia90.dll
 ![Alt text](Images/image-4.png)
 
 ## filter-ropfile.py
+Can used for refrence, but the ROP-q1 and ROP-q2 are not full list
 ```
 python3 filter-ropfile.py rop.txt                                              
 ```
