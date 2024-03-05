@@ -45,3 +45,19 @@ python3 filter-ropfile.py rop.txt
 ```
 ![Alt text](Images/image-6.png)
 ![Alt text](Images/image-7.png)
+
+
+
+## Code-caver.py
+Can used for finding code cave (a RX location of bunch of 0s)
+From noptech Github repository (https://raw.githubusercontent.com/nop-tech/code_caver/main/code_caver.py)
+```
+0:000> !py code_caver.py 55100000 55107000 
+Code Caver
+[*] Scanning for code caves in the address range 0x55100000 to 0x55107000
+
+[!] Code cave found at address 55102d3a with a size of 704 bytes
+
+[*] DONE
+```
+![alt text](Images/image-8.png)
